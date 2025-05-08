@@ -61,20 +61,24 @@ const Skills: React.FC = () => {
       >
         <div style={{ color: colors.primary }}>{skill.icon}</div>
       </div>
-      <h3 className="text-2xl font-bold mb-6" style={{ color: colors.primary }}>
+      <h3 className="text-2xl font-bold mb-4" style={{ color: colors.primary }}>
         {skill.title}
       </h3>
       <p className="text-lg text-gray-600 mb-8">{skill.description}</p>
-      <div className="grid grid-cols-2 gap-4 w-full mt-auto">
-        {skill.skills.map((item, i) => (
-          <div
-            key={i}
-            className="py-2 px-3 rounded-full text-base font-medium"
-            style={{ backgroundColor: colors.primary + "15", color: colors.primary }}
-          >
-            {item}
-          </div>
-        ))}
+
+      {/* Skills container with fixed layout */}
+      <div className="mt-auto w-full">
+        <div className="grid grid-cols-2 gap-3">
+          {skill.skills.map((item, i) => (
+            <div
+              key={i}
+              className="py-2 px-3 rounded-full text-base font-medium"
+              style={{ backgroundColor: colors.primary + "15", color: colors.primary }}
+            >
+              {item}
+            </div>
+          ))}
+        </div>
       </div>
     </motion.div>
   ))

@@ -7,7 +7,6 @@ import { useState, cloneElement } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination, EffectCoverflow } from "swiper/modules"
 import { motion } from "framer-motion"
-import { ChevronLeft, ChevronRight } from "lucide-react"
 import type { Swiper as SwiperType } from "swiper"
 
 interface CarouselProps {
@@ -102,10 +101,10 @@ const Carousel: React.FC<CarouselProps> = ({ title, slides, titleColor = "#333" 
         </Swiper>
 
         <div className="swiper-button-prev absolute left-2 top-1/2 z-10 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-md">
-          <ChevronLeft className="h-6 w-6" />
+          <span className="text-xl font-bold">&lt;</span>
         </div>
         <div className="swiper-button-next absolute right-2 top-1/2 z-10 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-md">
-          <ChevronRight className="h-6 w-6" />
+          <span className="text-xl font-bold">&gt;</span>
         </div>
       </div>
     </motion.div>
