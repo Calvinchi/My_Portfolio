@@ -80,7 +80,7 @@ const Skills: React.FC = () => {
   ))
 
   return (
-    <section id="skills" className="min-h-screen h-screen flex items-center py-20">
+    <section id="skills" className="min-h-screen flex items-center py-16">
       <Carousel title="My Skills" slides={skillSlides} titleColor={colors.primary} />
     </section>
   )

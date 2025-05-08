@@ -47,13 +47,13 @@ const Carousel: React.FC<CarouselProps> = ({ title, slides, titleColor = "#333" 
 
   return (
     <motion.div
-      className="w-full py-16"
+      className="w-full py-10"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
     >
-      <h2 className="text-5xl font-bold text-center mb-12" style={{ color: titleColor }}>
+      <h2 className="text-5xl font-bold text-center mb-8" style={{ color: titleColor }}>
         {title}
       </h2>
 

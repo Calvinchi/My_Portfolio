@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
   const { colors } = useSeason()
 
   return (
-    <section id="contact" className="min-h-screen h-screen flex items-center py-20">
+    <section id="contact" className="min-h-screen flex items-center py-16">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0 }}
@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
           viewport={{ once: true }}
           className="w-full"
         >
-          <h2 className="text-5xl font-bold text-center mb-16" style={{ color: colors.primary }}>
+          <h2 className="text-5xl font-bold text-center mb-10" style={{ color: colors.primary }}>
             Get In Touch
           </h2>
 

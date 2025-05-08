@@ -112,7 +112,7 @@ const Projects: React.FC = () => {
   ))
 
   return (
-    <section id="projects" className="min-h-screen py-20">
+    <section id="projects" className="min-h-screen py-16">
       <Carousel title="My Projects" slides={projectSlides} titleColor={colors.primary} />
     </section>
   )

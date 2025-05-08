@@ -129,7 +129,7 @@ const App: React.FC = () => {
               >
                 {/* Profile Picture with animations */}
                 <motion.div
-                  className="relative"
+                  className="relative profile-picture-container"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                   style={{ width: "min(100%, 500px)", height: "min(100vw, 500px)" }}
