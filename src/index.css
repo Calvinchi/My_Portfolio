@@ -1,0 +1,378 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #f8f4e8;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  }
+}
+
+:root {
+  --season-color: #88c9a1;
+  --season-secondary: #f8bbd0;
+  --season-accent: #c5e1a5;
+  --season-text: #2e7d32;
+  --swiper-theme-color: var(--season-color);
+  --swiper-navigation-size: 24px;
+}
+
+/* Add gradient animation for navbar */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Add these styles to your index.css file */
+
+/* Enhanced active nav link styles */
+/* Add these styles to your index.css file */
+
+/* Enhanced active nav link styles */
+.active-nav-link {
+  color: var(--season-color) !important;
+  font-weight: 700 !important;
+  position: relative;
+  transform: scale(1.15);
+  transition: all 0.3s ease;
+}
+
+.active-nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--season-color);
+  border-radius: 2px;
+  box-shadow: 0 0 10px var(--season-color);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.7;
+    box-shadow: 0 0 5px var(--season-color);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 15px var(--season-color);
+  }
+  100% {
+    opacity: 0.7;
+    box-shadow: 0 0 5px var(--season-color);
+  }
+}
+
+/* Mobile active link styles */
+.mobile-active-link {
+  position: relative;
+}
+
+.mobile-active-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: var(--season-color);
+  border-radius: 0 2px 2px 0;
+  box-shadow: 0 0 10px var(--season-color);
+}
+
+/* Add gradient animation for navbar */
+@keyframes moveGradient {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.nav-gradient-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(var(--season-color-rgb, 136, 201, 161), 0.2) 20%,
+    rgba(var(--season-secondary-rgb, 248, 187, 208), 0.2) 50%,
+    rgba(var(--season-color-rgb, 136, 201, 161), 0.2) 80%,
+    transparent 100%
+  );
+  animation: moveGradient 8s ease-in-out infinite;
+  background-size: 200% 100%;
+}
+
+/* Add CSS variables for RGB values of seasonal colors */
+:root {
+  --season-color-rgb: 136, 201, 161;
+  --season-secondary-rgb: 248, 187, 208;
+}
+
+/* Add smooth transitions for seasonal changes */
+body {
+  transition: background-color 1s ease, color 1s ease;
+}
+
+/* Add smooth transitions for nav links */
+.text-gray-700 {
+  transition: all 0.3s ease;
+}
+
+
+/* Add smooth transitions for seasonal changes */
+body {
+  transition: background-color 1s ease, color 1s ease;
+}
+
+/* Add smooth transitions for nav links */
+.text-gray-700 {
+  transition: all 0.3s ease;
+}
+
+/* Add seasonal animations */
+@keyframes falling {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(10px) rotate(360deg);
+  }
+}
+
+@keyframes flutter {
+  0% {
+    transform: translateX(-5px) translateY(-2px);
+  }
+  50% {
+    transform: translateX(5px) translateY(2px);
+  }
+  100% {
+    transform: translateX(-5px) translateY(-2px);
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+/* Add seasonal-specific styles */
+.spring-element {
+  animation: flutter 3s infinite ease-in-out;
+}
+
+.summer-element {
+  animation: sway 5s infinite ease-in-out;
+}
+
+.fall-element {
+  animation: falling 8s infinite ease-in-out;
+}
+
+.winter-element {
+  animation: falling 10s infinite linear;
+}
+
+/* Ensure buttons are clickable */
+button {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Ensure the wheel is visible and interactive */
+.season-wheel-button {
+  position: relative;
+  z-index: 50;
+  cursor: pointer;
+}
+
+/* Add a semi-transparent overlay to make content more readable over the tree */
+.content-overlay {
+  position: relative;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+/* Swiper carousel custom styles */
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--season-color) !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--season-color) !important;
+}
+
+/* Make carousel slides larger on bigger screens */
+@media (min-width: 768px) {
+  .swiper-slide {
+    width: 80%;
+    max-width: 800px;
+  }
+}
+
+/* Basic Swiper styles */
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #000;
+  opacity: 0.2;
+  margin: 0 4px;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--swiper-theme-color);
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+/* Coverflow effect */
+.swiper-effect-coverflow .swiper-wrapper {
+  perspective: 1200px;
+}
+
+.swiper-effect-coverflow .swiper-slide {
+  transform-style: preserve-3d;
+}
+
+/* Add seasonal navbar animations */
+.navbar-spring {
+  background: linear-gradient(90deg, #88c9a120, #f8bbd030, #88c9a120);
+  background-size: 200% 100%;
+  animation: gradientFlow 8s ease infinite;
+}
+
+.navbar-summer {
+  background: linear-gradient(90deg, #ffa72620, #ffeb3b20, #ffa72620);
+  background-size: 200% 100%;
+  animation: gradientFlow 10s ease infinite;
+}
+
+.navbar-fall {
+  background: linear-gradient(90deg, #ff980020, #f4433620, #ff980020);
+  background-size: 200% 100%;
+  animation: gradientFlow 12s ease infinite;
+}
+
+.navbar-winter {
+  background: linear-gradient(90deg, #b3e5fc20, #e1f5fe30, #b3e5fc20);
+  background-size: 200% 100%;
+  animation: gradientFlow 15s ease infinite;
+}
