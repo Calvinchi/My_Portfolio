@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
           viewport={{ once: true }}
           className="w-full"
         >
-          <h2 className="text-5xl font-bold text-center mb-10" style={{ color: colors.primary }}>
+          <h2 className="text-4xl font-bold text-center mb-10" style={{ color: colors.primary }}>
             Get In Touch
           </h2>
 
@@ -39,33 +39,33 @@ const Contact: React.FC = () => {
                 >
                   <Mail size={48} style={{ color: colors.primary }} />
                 </div>
-                <h3 className="text-3xl font-bold text-center" style={{ color: colors.primary }}>
+                <h3 className="text-2xl font-bold text-center" style={{ color: colors.primary }}>
                   Send Me a Message
                 </h3>
               </div>
               <form className="w-full space-y-6 flex-grow">
                 <div>
-                  <label className="block text-lg font-medium mb-2">Your Name</label>
+                  <label className="block text-base font-medium mb-2">Your Name</label>
                   <input
                     type="text"
-                    className={`w-full p-4 text-lg rounded-lg border-2 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-[${colors.primary}]`}
+                    className={`w-full p-3 text-base rounded-lg border-2 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-[${colors.primary}]`}
                     style={{ borderColor: colors.primary }}
                     placeholder="John Doe"
                   />
                 </div>
                 <div>
-                  <label className="block text-lg font-medium mb-2">Your Email</label>
+                  <label className="block text-base font-medium mb-2">Your Email</label>
                   <input
                     type="email"
-                    className={`w-full p-4 text-lg rounded-lg border-2 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-[${colors.primary}]`}
+                    className={`w-full p-3 text-base rounded-lg border-2 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-[${colors.primary}]`}
                     style={{ borderColor: colors.primary }}
                     placeholder="john@example.com"
                   />
                 </div>
                 <div>
-                  <label className="block text-lg font-medium mb-2">Message</label>
+                  <label className="block text-base font-medium mb-2">Message</label>
                   <textarea
-                    className={`w-full p-4 text-lg rounded-lg border-2 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-[${colors.primary}]`}
+                    className={`w-full p-3 text-base rounded-lg border-2 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-[${colors.primary}]`}
                     style={{ borderColor: colors.primary }}
                     placeholder="Your message here..."
                     rows={5}
@@ -73,7 +73,7 @@ const Contact: React.FC = () => {
                 </div>
                 <button
                   type="submit"
-                  className="flex items-center gap-2 py-3 px-6 rounded-lg text-white font-medium text-lg transition-transform hover:scale-105"
+                  className="flex items-center gap-2 py-2 px-5 rounded-lg text-white font-medium text-base transition-transform hover:scale-105"
                   style={{ backgroundColor: colors.primary }}
                 >
                   <Send size={20} />
@@ -98,7 +98,7 @@ const Contact: React.FC = () => {
                 >
                   <Phone size={48} style={{ color: colors.primary }} />
                 </div>
-                <h3 className="text-3xl font-bold text-center" style={{ color: colors.primary }}>
+                <h3 className="text-2xl font-bold text-center" style={{ color: colors.primary }}>
                   Contact Information
                 </h3>
               </div>

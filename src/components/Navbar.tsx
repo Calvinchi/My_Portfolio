@@ -266,7 +266,7 @@ const Navbar: React.FC<NavbarProps> = ({ colors }) => {
                 offset={-100}
                 duration={400}
                 onSetActive={() => handleSetActive(link.to)}
-                className={`text-2xl font-medium transition-all duration-300 cursor-pointer ${
+                className={`text-xl font-medium transition-all duration-300 cursor-pointer ${
                   activeSection === link.to ? "text-[color:var(--season-color)]" : "text-gray-700"
                 }`}
                 style={{ "--season-color": colors.primary } as React.CSSProperties}
@@ -320,7 +320,7 @@ const Navbar: React.FC<NavbarProps> = ({ colors }) => {
                 <motion.svg
                   key="close"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8"
+                  className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -335,7 +335,7 @@ const Navbar: React.FC<NavbarProps> = ({ colors }) => {
                 <motion.svg
                   key="menu"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8"
+                  className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -381,7 +381,7 @@ const Navbar: React.FC<NavbarProps> = ({ colors }) => {
                     offset={-100}
                     duration={400}
                     onSetActive={() => handleSetActive(link.to)}
-                    className={`text-xl text-center font-medium transition-all duration-300 py-3 cursor-pointer block ${
+                    className={`text-lg text-center font-medium transition-all duration-300 py-3 cursor-pointer block ${
                       activeSection === link.to ? "text-[color:var(--season-color)]" : "text-gray-700"
                     }`}
                     style={{ "--season-color": colors.primary } as React.CSSProperties}

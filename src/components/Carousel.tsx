@@ -53,7 +53,7 @@ const Carousel: React.FC<CarouselProps> = ({ title, slides, titleColor = "#333" 
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
     >
-      <h2 className="text-5xl font-bold text-center mb-8" style={{ color: titleColor }}>
+      <h2 className="text-4xl font-bold text-center mb-8" style={{ color: titleColor }}>
         {title}
       </h2>
 

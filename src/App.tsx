@@ -34,11 +34,11 @@ const App: React.FC = () => {
       // Calculate the angle for even distribution around the circle
       const angle = (i / count) * 360
       // Different radius for each particle to create multiple orbits
-      const radius = 140 + (i % 3) * 30
+      const radius = 100 + (i % 3) * 20
       // Different speeds for more dynamic movement
       const speed = 10 + (i % 5) * 5
       // Different sizes for visual interest
-      const size = 6 + (i % 4) * 3
+      const size = 4 + (i % 4) * 2
 
       let particleColor = ""
 
@@ -96,16 +96,16 @@ const App: React.FC = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <h1 className="text-6xl md:text-7xl font-bold text-[#0a192f] mb-6">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0a192f] mb-6">
                   Welcome, My name is <span style={{ color: colors.primary }}>Jhediael Calvin.</span>
                 </h1>
-                <p className="text-2xl md:text-3xl text-gray-600 mb-6 leading-relaxed">
+                <p className="text-xl md:text-2xl text-gray-600 mb-6 leading-relaxed">
                   A passionate and proactive Computer Science student committed to continuous learning and growth in
                   both technical and interpersonal domains.
                 </p>
 
                 {/* Add seasonal quote */}
-                <p className="text-xl md:text-2xl italic mb-10" style={{ color: colors.primary }}>
+                <p className="text-lg md:text-xl italic mb-10" style={{ color: colors.primary }}>
                   "{currentQuote}"
                 </p>
 
@@ -114,7 +114,7 @@ const App: React.FC = () => {
                   spy={true}
                   smooth={true}
                   duration={400}
-                  className="font-medium text-xl py-4 px-8 rounded-full inline-block transition-all cursor-pointer"
+                  className="font-medium text-lg py-3 px-6 rounded-full inline-block transition-all cursor-pointer"
                   style={{ backgroundColor: colors.primary, color: "white" }}
                 >
                   Get in touch
@@ -132,7 +132,7 @@ const App: React.FC = () => {
                   className="relative profile-picture-container"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
-                  style={{ width: "min(100%, 500px)", height: "min(100vw, 500px)" }}
+                  style={{ width: "min(80%, 400px)", height: "min(80vw, 400px)" }}
                 >
                   {/* Animated border/glow effect based on season */}
                   <motion.div

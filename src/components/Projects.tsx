@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
   const projectSlides = projectsData.map((project, index) => (
     <motion.div
       key={index}
-      className="bg-white rounded-2xl shadow-xl overflow-hidden h-[600px] flex flex-col"
+      className="bg-white rounded-2xl shadow-xl overflow-hidden h-[550px] flex flex-col"
       whileHover={{ y: -10, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
       transition={{ duration: 0.3 }}
     >
@@ -70,10 +70,10 @@ const Projects: React.FC = () => {
         />
       </div>
       <div className="p-8 flex flex-col flex-grow">
-        <h3 className="text-3xl font-bold mb-4" style={{ color: colors.primary }}>
+        <h3 className="text-2xl font-bold mb-4" style={{ color: colors.primary }}>
           {project.title}
         </h3>
-        <p className="text-xl text-gray-600 mb-6">{project.description}</p>
+        <p className="text-lg text-gray-600 mb-6">{project.description}</p>
         <div className="flex flex-wrap gap-2 mb-6">
           {project.technologies.map((tech, i) => (
             <span
