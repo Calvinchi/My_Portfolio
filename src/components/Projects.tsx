@@ -11,47 +11,58 @@ const Projects: React.FC = () => {
 
   const projectsData = [
     {
-      title: "E-Commerce Platform",
+      title: "VAMOS - Virtual Machine Monitoring System",
       image: "/placeholder.svg?height=300&width=600",
       description:
-        "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
-      technologies: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS", "MongoDB"],
+        "An efficient and lightweight Virtual Machine Monitoring System providing real-time performance tracking across critical system metrics in virtualized environments.",
+      technologies: ["TypeScript", "Python", "React", "Node.js", "Docker"],
       liveLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/SKYRENZ/VAMOS.git",
     },
     {
-      title: "Task Management App",
+      title: "Clinic Management System",
       image: "/placeholder.svg?height=300&width=600",
       description:
-        "A collaborative task management application with real-time updates and team collaboration features.",
-      technologies: ["React", "Firebase", "Redux", "Material UI", "Node.js"],
+        "A comprehensive clinic management solution designed to streamline patient records, appointments, billing, and medical staff management for healthcare facilities.",
+      technologies: ["TypeScript", "Java", "React", "Spring Boot", "MySQL"],
       liveLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/Genrei123/clinic-management-system.git",
     },
     {
-      title: "Portfolio Website",
-      image: "/placeholder.svg?height=300&width=600",
-      description: "A responsive portfolio website with seasonal themes and interactive elements.",
-      technologies: ["React", "Framer Motion", "Tailwind CSS", "TypeScript"],
-      liveLink: "#",
-      githubLink: "#",
-    },
-    {
-      title: "Weather Dashboard",
+      title: "Temphu - IoT Temperature & Humidity Monitor",
       image: "/placeholder.svg?height=300&width=600",
       description:
-        "A weather dashboard that displays current and forecasted weather data with interactive visualizations.",
-      technologies: ["React", "Chart.js", "Weather API", "Styled Components"],
+        "An IoT-based system that monitors temperature and humidity levels in real-time, providing accurate environmental data tracking and alerts for various applications.",
+      technologies: ["TypeScript", "IoT", "React", "Node.js", "MongoDB"],
       liveLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/kopiibara/Temphu.git",
     },
     {
-      title: "Social Media Platform",
+      title: "NaviGaze - Indoor Navigation System",
       image: "/placeholder.svg?height=300&width=600",
-      description: "A social media platform with user profiles, posts, comments, and real-time notifications.",
-      technologies: ["Next.js", "Socket.io", "MongoDB", "Express", "AWS S3"],
+      description:
+        "An innovative indoor navigation solution that uses eye-tracking technology to assist users in navigating complex indoor environments like shopping malls and airports.",
+      technologies: ["Python", "Computer Vision", "React Native", "TensorFlow"],
       liveLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/Arjayy007/NaviGaze-Indoor-Navigation.git",
+    },
+    {
+      title: "Restaurant Management System",
+      image: "/placeholder.svg?height=300&width=600",
+      description:
+        "A full-featured restaurant management platform that handles orders, inventory, staff scheduling, and customer management to optimize restaurant operations.",
+      technologies: ["Java", "Spring Boot", "React", "MySQL", "REST API"],
+      liveLink: "#",
+      githubLink: "https://github.com/Mon0629/RestaurantManagementSystem.git",
+    },
+    {
+      title: "Billing Management System",
+      image: "/placeholder.svg?height=300&width=600",
+      description:
+        "A robust billing and invoicing system that automates payment processing, tracks expenses, generates financial reports, and manages customer billing information.",
+      technologies: ["Java", "Spring Boot", "React", "PostgreSQL", "Docker"],
+      liveLink: "#",
+      githubLink: "https://github.com/Mon0629/BillingManagementSystem.git",
     },
   ]
 
