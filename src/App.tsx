@@ -8,6 +8,7 @@ import Skills from "./components/Skills"
 import Projects from "./components/Projects"
 import Certificates from "./components/Certificates"
 import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 import { motion } from "framer-motion"
 import { SeasonWheel } from "./components/SeasonWheel"
 import SeasonalBackground from "./components/SeasonalBackground"
@@ -74,7 +75,7 @@ const App: React.FC = () => {
   const circlingParticles = generateCirclingParticles(15)
 
   return (
-    <div className="min-h-screen transition-colors duration-1000">
+    <div className="min-h-screen w-full transition-colors duration-1000">
       {/* Add the seasonal background with particles */}
       <SeasonalBackground />
 
@@ -87,8 +88,8 @@ const App: React.FC = () => {
 
       <div className="relative z-10" ref={mainRef}>
         {/* Hero Section */}
-        <section id="home" className="h-screen flex items-center">
-          <div className="container mx-auto px-4">
+        <section id="home" className="min-h-screen w-full flex items-center">
+          <div className="container mx-auto px-4 w-full">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <motion.div
                 className="md:w-1/2 mb-8 md:mb-0 text-left"
@@ -129,10 +130,9 @@ const App: React.FC = () => {
               >
                 {/* Profile Picture with animations */}
                 <motion.div
-                  className="relative profile-picture-container"
+                  className="relative profile-picture-container w-full max-w-[400px] h-auto aspect-square"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
-                  style={{ width: "min(80%, 400px)", height: "min(80vw, 400px)" }}
                 >
                   {/* Animated border/glow effect based on season */}
                   <motion.div
@@ -248,6 +248,7 @@ const App: React.FC = () => {
         <Projects />
         <Certificates />
         <Contact />
+        <Footer />
       </div>
     </div>
   )

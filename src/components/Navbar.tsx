@@ -247,7 +247,7 @@ const Navbar: React.FC<NavbarProps> = ({ colors }) => {
         <div className="nav-gradient-animation"></div>
       </div>
 
-      <div className="container mx-auto px-6 flex justify-center items-center relative z-10">
+      <div className="container mx-auto px-6 w-full flex justify-center items-center relative z-10">
         {/* Desktop Navigation - Centered */}
         <div className="hidden md:flex space-x-16 justify-center">
           {navLinks.map((link, index) => (

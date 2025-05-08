@@ -110,7 +110,7 @@ const Certificates: React.FC = () => {
   ))
 
   return (
-    <section ref={sectionRef} id="certificates" className="min-h-screen py-16" data-section="certificates">
+    <section ref={sectionRef} id="certificates" className="min-h-screen w-full py-16" data-section="certificates">
       <Carousel title="My Certificates" slides={certificateSlides} titleColor={colors.primary} />
     </section>
   )

@@ -3,13 +3,13 @@
 import type React from "react"
 import { motion } from "framer-motion"
 import { useSeason } from "./SeasonContext"
-import { Mail, Phone, MapPin, Send, Linkedin, Github, Twitter } from "lucide-react"
+import { Mail, Phone, MapPin, Send, Linkedin, Github, Facebook } from "lucide-react"
 
 const Contact: React.FC = () => {
   const { colors } = useSeason()
 
   return (
-    <section id="contact" className="min-h-screen flex items-center py-16">
+    <section id="contact" className="min-h-screen w-full flex items-center py-16">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0 }}
@@ -154,7 +154,7 @@ const Contact: React.FC = () => {
                   <h4 className="text-xl font-medium mb-4">Connect With Me</h4>
                   <div className="flex gap-4">
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/in/jhediael-calvin-ramboyong-b4573932b/"
                       className="w-12 h-12 rounded-full flex items-center justify-center transition-transform hover:scale-110"
                       style={{ backgroundColor: colors.primary }}
                       target="_blank"
@@ -163,7 +163,7 @@ const Contact: React.FC = () => {
                       <Linkedin size={24} className="text-white" />
                     </a>
                     <a
-                      href="#"
+                      href="https://github.com/Calvinchi"
                       className="w-12 h-12 rounded-full flex items-center justify-center transition-transform hover:scale-110"
                       style={{ backgroundColor: colors.primary }}
                       target="_blank"
@@ -172,13 +172,13 @@ const Contact: React.FC = () => {
                       <Github size={24} className="text-white" />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.facebook.com/jhediaelcalvin.ramboyong"
                       className="w-12 h-12 rounded-full flex items-center justify-center transition-transform hover:scale-110"
                       style={{ backgroundColor: colors.primary }}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Twitter size={24} className="text-white" />
+                      <Facebook size={24} className="text-white" />
                     </a>
                   </div>
                 </div>

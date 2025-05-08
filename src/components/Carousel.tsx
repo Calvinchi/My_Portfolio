@@ -62,20 +62,32 @@ const Carousel: React.FC<CarouselProps> = ({ title, slides, titleColor = "#333" 
           effect="coverflow"
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={"auto"}
+          slidesPerView={3}
+          spaceBetween={30}
           initialSlide={initialSlide}
           loop={true}
           coverflowEffect={{
-            rotate: 50,
+            rotate: 0,
             stretch: 0,
             depth: 100,
-            modifier: 1,
-            slideShadows: true,
+            modifier: 1.5,
+            slideShadows: false,
           }}
           pagination={{ clickable: true }}
           navigation={{
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+          }}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
           }}
           modules={[EffectCoverflow, Pagination, Navigation]}
           className="mySwiper"
@@ -83,7 +95,7 @@ const Carousel: React.FC<CarouselProps> = ({ title, slides, titleColor = "#333" 
           onSlideChange={handleSlideChange}
         >
           {enhancedSlides.map((slide, index) => (
-            <SwiperSlide key={index} className="max-w-4xl">
+            <SwiperSlide key={index} className="max-w-4xl transition-all duration-300">
               {slide}
             </SwiperSlide>
           ))}
